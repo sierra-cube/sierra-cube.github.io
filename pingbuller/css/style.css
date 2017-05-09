@@ -1,8 +1,22 @@
 * {
 	box-sizing: border-box;
 }
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+	overflow: hidden;
+}
 @media only screen and (min-width: 320px) {
 	.topPart {
+		position: relative;
 		background: url(../img/mainBG.png) -1040px 0px no-repeat;
 		height: 516px;
 		border-bottom: 1px solid #35273c;
@@ -24,7 +38,7 @@
 		margin-left: 11.5625%;
 		width: 76.875%;
 		height: 259px;
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'league_gothicregular', sans-serif;
 		font-size: 18px;
 		text-align: center;
 		line-height: 42px;
@@ -45,23 +59,25 @@
 	}
 	.slider {
 		margin-top: 193px;
-		padding-left: 20.625%;
+		padding-left: 27.625%;
 	}
 	.slider__heading {
 		color: white;
 		font-size: 27px;
+		font-family: 'league_gothicregular', sans-serif;
 	}
 	.slider__span {
 		color: #edbfff;
 		text-transform: uppercase;
 		font-size: 14px;
+		font-family: 'league_gothicregular', sans-serif;
 	}
 	.slider__form {
 		margin-top: 81px;
 		margin-left: 18.125%;
 	}
 	.slider__text {
-		font-family: OpenSans, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		color: #dbdadc;
 		margin-top: 6px;
 		line-height: 24px;
@@ -71,6 +87,7 @@
 		overflow: hidden;
 	}
 	.upperMiddlePart {
+		position: relative;
 		background: linear-gradient(to top, #36293d, #745183);
 		border-bottom: 1px solid #21333b;
 		height: 597px;
@@ -100,7 +117,7 @@
 		overflow: hidden;
 	}
 	.topArticle__heading {
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'league_gothicregular', sans-serif;
 		text-transform: uppercase;
 		text-shadow: 1px 1px 1px black;
 	}
@@ -108,14 +125,14 @@
 		display: block;
 		margin-top: 1px;
 		text-shadow: 1px 1px 1px black;
-		font-family: OpenSans, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 12px;
 		line-height: 24px;
 		overflow: hidden;
 		height: 66px;
 	}
 	.topArticle__link {
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'league_gothicregular', sans-serif;
 		text-decoration: none;
 		color: white;
 		text-transform: uppercase;
@@ -134,6 +151,7 @@
 		margin-bottom: 69px;
 	}
 	.lowerMiddlePart {
+		position: relative;
 		border-top: 1px solid #12191f;
 		background-color: #f9f9f9; 
 		border-bottom: 1px solid #e6e6e6;
@@ -160,7 +178,7 @@
 		text-transform: uppercase;
 		font-size: 18px;
 		line-height: 24px;
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'league_gothicregular', sans-serif;
 	}
 	.bottomSlider__heading--lower {
 		color: #edbfff;
@@ -174,10 +192,11 @@
 		height: 150px;
 		line-height: 24px;
 		font-size: 12px;
-		font-family: OpenSans, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		overflow: hidden;
 	}
 	.imgBox {
+		position: relative;
 		border-top: 1px solid #fefefe;
 		background-color: #f9f9f9;
 	}
@@ -196,26 +215,26 @@
 		font-size: 22px;
 		color: #454545;
 		text-transform: uppercase;
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'league_gothicregular', sans-serif;
 	}
 	.blog__heading {
 		margin-top: 21px;
 		font-size: 12px;
-		font-family: OpenSans, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-weight: bold;
 		color: #454545;
 		line-height: 24px;
 	}
 	.blog__span {
 		font-size: 12px;
-		font-family: OpenSans, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		line-height: 24px;
 	}
 	.blog__link {
 		margin-top: 20px;
 		float: right;
 		text-decoration: none;
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'league_gothicregular', sans-serif;
 		text-transform: uppercase;
 		color: #454545;
 		font-size: 14px;
@@ -268,7 +287,7 @@
 		margin-top: 285px;
 	}
 	.bottomPart__span {
-		font-family: OpenSans, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 9px;
 		color: rgba(255, 255, 255, 0.8);
 	}
@@ -278,6 +297,7 @@
 		color: rgb(255, 255, 255);
 	}
 	.bottomPart {
+		position: relative;
 		text-align: center;
 		padding-top: 43px;
 		height: 201px;
@@ -335,6 +355,7 @@
 		width: 77.0833%;
 	}
 	.news {
+		position: relative;
 		display: block;
 		background-color: #ececec;
 		padding-top: 81px;
@@ -348,14 +369,14 @@
 	}
 	.news__heading {
 		text-transform: uppercase;
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'league_gothicregular', sans-serif;
 		font-size: 17px;
 		line-height: 24px;
 		text-shadow: 1px 1px 1px white;
 		margin-bottom: 19px;
 	}
 	.news__span {
-		font-family: LeagueGothic, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 12px;
 		line-height: 24px;
 		text-shadow: 1px 1px 1px white;
@@ -674,7 +695,7 @@
 		width: 44.4792%;
 	}
 	.blog {
-		margin-left: 53.125%;
+		margin-left: 58.125%;
 	}
 	.blog__link {
 		margin-right: 20%;
@@ -703,7 +724,13 @@
 	}
 }
 @media only screen and (min-width: 1024px) {
-	.topPart {
-		
+	body {
+		text-align: center;
+		background-color: #d4cbc3;
+	}
+	.container {
+		width: 1024px;
+		display: inline-block;
+		text-align: left;
 	}
 }
