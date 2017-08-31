@@ -1,0 +1,51 @@
+.carousel-element {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.carousel-element img {
+	max-width: 100px;
+}
+.carousel-list {
+	position: relative;
+	width: 3000px;
+}
+.carousel-hider {
+	width: 540px;
+	overflow: hidden;
+	float: left;
+	user-select: none;
+}
+.carousel-arrow {
+	margin-top: 30px;
+	display: block;
+	width: 54px;
+	height: 20px;
+	border: 1px solid black;
+	background-color: lightgrey;
+	text-align: center;
+	user-select: none;
+	cursor: default;
+}
+.c-a:hover {
+	cursor: pointer;
+}
+.carousel-arrow:active {
+	background-color: grey;
+	user-select: none;
+}
+.left {
+	margin-right: 5px;
+	float: left;
+	opacity: 0;
+}
+.lStop:active {
+	background-color: red;
+}
+.rStop:active {
+	background-color: red;
+}
+.right {
+	margin-left: 5px;
+	float: left;
+}
