@@ -28,12 +28,13 @@
 }
 @media only screen and (min-width: 320px) {
 	.promo {
-		background: url(../img/promo--mobile.jpg);
+		background: url(../img/promo.jpg) no-repeat center;
 		height: 540px;
 		width: 100%
 	}
 	header {
 		height: 194px;
+		text-align: center;
 	}
 	.header__logIn {
 		display: block;
@@ -126,6 +127,9 @@
 		margin-left: 3.125%;
 		height: 240px;
 		width: 93.75%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		background-image: url(../img/step1.jpg);
 	}
 	.howWorks__step--step2 {
@@ -356,11 +360,12 @@
 	}
 	.masonryGrid {
 		margin-left: 3.125%;
+		margin-right: 3.125%;
 		width: 93.75%;
 		height: 900px;
 	}
 	.masonryGrid__item {
-		width: 300px;
+		width: 100%;
 		height: 120px;
 		margin-top: 10px;
 		overflow: hidden;
@@ -393,4 +398,18 @@
 		left: -160px;
 	}
 	
+}
+@media only screen and (min-width: 321px) {
+	.header__logo {
+		left: 25.5%;
+	}
+	.header__logIn {
+		margin-left: 27.25%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.howWorks__header {
+		margin-top: 100px;
+	}
+
 }
