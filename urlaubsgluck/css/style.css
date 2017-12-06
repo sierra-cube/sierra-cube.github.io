@@ -46,10 +46,10 @@
 		font-size: 14px;
 	}
 	.header__logIn:active {
-		text-shadow: 0px 0px 4px #ff4e50;
+		color: #ff4e50;
 	}
 	.header__signUp:active {
-		text-shadow:  0px 0px 4px #ff4e50;
+		color: #ff4e50;
 		border-color: #ff4e50;
 	}
 	.header__signUp {
@@ -118,7 +118,9 @@
 		background-color: #ff4e50;
 	}
 	.promo__findPartner:active {
-		box-shadow: inset 0px 0px 4px black;
+		box-shadow: inset 0px 0px 5px rgb(50, 50, 50);
+		/*padding-top: 13px;*/
+		font-size: 13.5px;
 	}
 	.howWorks__step {
 		margin-top: 20px;
@@ -161,7 +163,8 @@
 		border-radius: 8px; 
 	}
 	.howWorks__artLink:active {
-		box-shadow: inset 0px 0px 2px black;
+		box-shadow: inset 0px 0px 2px rgb(50, 50, 50);
+		font-size: 9.5px;
 	}
 	.howWorks__artHeader {
 		margin-top: 18px;
@@ -249,7 +252,8 @@
 	}
 	.meetPartner__seeOther:active {
 		border: 1px solid #ff4e50;
-		box-shadow: inset 0px 0px 4px black;
+		box-shadow: inset 0px 0px 4px rgb(50, 50, 50);
+		font-size: 13.5px;
 	}
 	.holidayIdeas {
 		text-align: center;
@@ -303,7 +307,8 @@
 		border-radius: 20px;
 	}
 	.holidayIdeas__button:active {
-		box-shadow: inset 0px 0px 4px black;
+		box-shadow: inset 0px 0px 4px rgb(50, 50, 50);
+		font-size: 13.5px;
 	}
 	footer {
 		margin-top: 40px;
@@ -348,7 +353,7 @@
 		text-decoration: none;
 	}
 	.footer__mLink:active {
-		text-shadow: 0px 0px 0.5px #ff4e50;
+		color: #ff4e50;
 	}
 	.footer__design {
 		margin-top: 18px;
@@ -360,7 +365,7 @@
 		height: 900px;
 	}
 	.masonryGrid__item {
-		width: 300px;
+		width: 100%;
 		height: 120px;
 		margin-top: 10px;
 		overflow: hidden;
@@ -375,7 +380,7 @@
 		text-decoration: none;
 	}
 	.masonryGrid__link:active {
-		text-shadow: 0px 0px 3px #ff4e50;
+		color: #ff4e50;
 	}
 	.masonryGrid__link--2 {
 		margin-top: 36px;
@@ -393,4 +398,41 @@
 		left: -160px;
 	}
 	
+}
+@media only screen and (min-width: 768px) {
+	.promo {
+		background-image: url(../img/promo.jpg);
+		background-position: center;
+		height: 700px;
+		width: 100%;
+	}
+	header {
+		height: 90px;
+	}
+	.header__logIn {
+		position: absolute;
+		left: 73.828%;
+		top: 50px;
+		margin: 0;
+	}
+	.header__signUp {
+		position: absolute;
+		top: 38px;
+		left: 81.7708%;
+		margin: 0;
+		width: 11.7188%;
+		
+	}
+	.header__logo {
+		position: absolute;
+		left: 6.5%;
+		top: 50px;
+	}
+	.promo__top {
+		margin-top: 126px;
+		padding-left: 17.7083%;
+		padding-right: 17.7083%;
+		font-size: 52px;
+		line-height: 62px;
+	}
 }

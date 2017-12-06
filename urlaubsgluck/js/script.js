@@ -39,11 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	};
 
 
-	console.log(divMasonryGrid);
 	var parent = document.getElementsByClassName('holidayIdeas');
 	var drop = document.getElementById('dropZone');
 	parent[0].insertBefore(divMasonryGrid, drop);
-
 
 
 });
@@ -52,16 +50,6 @@ $('.masonryGrid').masonry({
   itemSelector: '.masonryGrid__item'
 });
 
-$(function() {
-	$.ajax({
-		url: 'pixabay.com/api/?key=7161611-d63bfa7b7243fea35e444bf57&q=yellow+flowers&image_type=photo',
-		method: 'GET',
-		success: function (hits) {
-			console.log(hits.webformatURL);
-			console.log('hello');
-		}
-	})
-});
 
 
 
